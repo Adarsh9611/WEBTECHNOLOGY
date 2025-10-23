@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>College Event Registration Form</title>
+<style>
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color:#f4f4f4;
+    margin: 20px;
+}
+h1 {
+    text-align: center;
+    color: #004080;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+table {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    box-shadow: 0 0 12px rgba(0, 64, 128, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+th {
+    text-align: left;
+    padding: 15px;
+    background-color: #0073e6;
+    color: white;
+    font-size: 20px;
+}
+td {
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 6px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+input[type="submit"],
+input[type="reset"] {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0059b3;
+}
+textarea {
+    resize: vertical;
+    height: 90px;
+}
+.radio, .checkbox {
+    width: auto;
+}
+</style>
+</head>
+<body>
+<h1>SMVITM College Event Registration Form</h1>
+<form action="#" method="post">
+<table>
+    <tr>
+        <th colspan="2">Participant Information</th>
+    </tr>
+    <tr>
+        <td>Full Name:</td>
+        <td><input type="text" name="fullname" placeholder="Enter your full name" required></td>
+    </tr>
+    <tr>
+        <td>Student ID / Roll No.:</td>
+        <td><input type="text" name="rollnumber" placeholder="Enter your roll number" required></td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td><input type="email" name="email" placeholder="Enter your email" required></td>
+    </tr>
+    <tr>
+        <td>Contact Number:</td>
+        <td><input type="number" name="contact" placeholder="Enter your contact number" required></td>
+    </tr>
+    <tr>
+        <td>Department:</td>
+        <td>
+            <select name="department" required>
+                <option value="">--Select Department--</option>
+                <option value="cse">Computer Science</option>
+                <option value="ece">Electronics and Communication</option>
+                <option value="mech">Mechanical Engineering</option>
+                <option value="civil">Civil Engineering</option>
+                <option value="it">Information Technology</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Year of Study:</td>
+        <td>
+            <select name="year" required>
+                <option value="">--Select Year--</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <th colspan="2">Event Details</th>
+    </tr>
+    <tr>
+        <td>Event Name:</td>
+        <td>
+            <select name="event" required>
+                <option value="">--Select Event--</option>
+                <option value="coding">Coding Contest</option>
+                <option value="quiz">Tech Quiz</option>
+                <option value="hackathon">Hackathon</option>
+                <option value="poster">Poster Presentation</option>
+                <option value="dance">Cultural Dance</option>
+                <option value="sports">Sports Meet</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Participation Type:</td>
+        <td>
+            <input type="radio" name="participation" value="individual" class="radio"> Individual
+            <input type="radio" name="participation" value="team" class="radio"> Team
+        </td>
+    </tr>
+    <tr>
+        <td>Team Name (if applicable):</td>
+        <td><input type="text" name="teamname" placeholder="Enter team name (if team event)"></td>
+    </tr>
+    <tr>
+        <td>Event Date:</td>
+        <td><input type="date" name="event_date" required></td>
+    </tr>
+    <tr>
+        <td>Special Requirements:</td>
+        <td><textarea name="requirements" placeholder="Enter any special requirements (if any)"></textarea></td>
+    </tr>
+    <tr>
+        <td>Hobbies / Interests:</td>
+        <td>
+            <input type="checkbox" name="hobbies" value="coding" class="checkbox"> Coding
+            <input type="checkbox" name="hobbies" value="music" class="checkbox"> Music
+            <input type="checkbox" name="hobbies" value="sports" class="checkbox"> Sports
+            <input type="checkbox" name="hobbies" value="art" class="checkbox"> Art
+            <input type="checkbox" name="hobbies" value="reading" class="checkbox"> Reading
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align:center;">
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+        </td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
